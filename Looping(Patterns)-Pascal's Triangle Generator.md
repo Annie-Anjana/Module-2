@@ -28,8 +28,18 @@ To write a Python program that generates **Pascal's Triangle** using numbers. Th
 
 ## 🧪 Program
 Add Code Here
-
+```
+import math
+rows = int(input("Enter the number of rows: "))
+for n in range(rows):
+    print(" " * (rows - n - 1), end="")  # Printing leading spaces for formatting
+    for k in range(n + 1):
+        value = math.comb(n, k)  # Using math.comb for binomial coefficient calculation
+        print(value, end=" ")  # Print the value with a space between them
+    print()
+```
 ## Sample Output
-
+![Screenshot 2025-04-30 114245](https://github.com/user-attachments/assets/00c4c557-94b8-49db-8192-e671482ca5d9)
 ## Result
+The code executed successfully.
 
